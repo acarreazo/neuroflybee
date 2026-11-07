@@ -1,6 +1,6 @@
 modulo,particion,episodios_o_escenarios,muestras,Avanzar,Girar izquierda,Girar derecha,Giro cerrado izq.,Giro cerrado der.,Mantener posición,segundos
-mosca,train,400,76077,30127,16736,16660,6176,6306,72,119
-mosca,val,60,10593,4257,2256,2312,893,838,37,17
-abeja,train,600,38400,,,,,,,26
-abeja,val,100,6400,,,,,,,4
-abeja,test,100,6400,,,,,,,
+mosca,train,400,76077,30127,16736,16660,6176,6306,72,239
+mosca,val,60,10593,4257,2256,2312,893,838,37,33
+abeja,train,600,38400,,,,,,,51
+abeja,val,100,6400,,,,,,,7
+abeja,test,100,6400,,,,,,,9

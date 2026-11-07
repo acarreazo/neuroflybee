@@ -1,0 +1,143 @@
+{
+  "best_epoch": 4,
+  "best_score": 58.32250213623047,
+  "total_seconds": 21.141008777000025,
+  "device": "cuda",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8022383236885071,
+      "val_loss": 0.7606947898864747,
+      "metrics": {
+        "angle_error_median": 59.23257064819336,
+        "angle_error_mean": 69.12439727783203,
+        "within_30deg": 0.2825,
+        "distance_mae": 2.643815040588379
+      },
+      "lr": 0.001,
+      "seconds": 2.0875664180002786
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7179479924837748,
+      "val_loss": 0.7610524725914002,
+      "metrics": {
+        "angle_error_median": 59.154808044433594,
+        "angle_error_mean": 69.43376159667969,
+        "within_30deg": 0.2725,
+        "distance_mae": 2.506232261657715
+      },
+      "lr": 0.0009972609476841367,
+      "seconds": 1.9491786420003336
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6966249918937684,
+      "val_loss": 0.7588715887069702,
+      "metrics": {
+        "angle_error_median": 58.722991943359375,
+        "angle_error_mean": 69.3740463256836,
+        "within_30deg": 0.27015625,
+        "distance_mae": 2.5813148021698
+      },
+      "lr": 0.0009890738003669028,
+      "seconds": 1.9198521449998225
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6754685942331949,
+      "val_loss": 0.759320673942566,
+      "metrics": {
+        "angle_error_median": 58.32250213623047,
+        "angle_error_mean": 69.25809478759766,
+        "within_30deg": 0.271875,
+        "distance_mae": 2.519394874572754
+      },
+      "lr": 0.0009755282581475768,
+      "seconds": 1.9085004919998028
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.6445706939697265,
+      "val_loss": 0.7871865320205689,
+      "metrics": {
+        "angle_error_median": 62.16888427734375,
+        "angle_error_mean": 71.30279541015625,
+        "within_30deg": 0.2534375,
+        "distance_mae": 2.496159553527832
+      },
+      "lr": 0.0009567727288213003,
+      "seconds": 1.903245749999769
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.6201042993863424,
+      "val_loss": 0.8011857080459595,
+      "metrics": {
+        "angle_error_median": 63.152381896972656,
+        "angle_error_mean": 72.36322021484375,
+        "within_30deg": 0.255,
+        "distance_mae": 2.578824758529663
+      },
+      "lr": 0.0009330127018922195,
+      "seconds": 2.639443967000261
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5949448831876119,
+      "val_loss": 0.7993575835227966,
+      "metrics": {
+        "angle_error_median": 62.891605377197266,
+        "angle_error_mean": 72.22281646728516,
+        "within_30deg": 0.250625,
+        "distance_mae": 2.535409450531006
+      },
+      "lr": 0.0009045084971874739,
+      "seconds": 2.978070870999545
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.5712896466255188,
+      "val_loss": 0.7999376797676087,
+      "metrics": {
+        "angle_error_median": 62.587772369384766,
+        "angle_error_mean": 72.32144165039062,
+        "within_30deg": 0.2559375,
+        "distance_mae": 2.530245065689087
+      },
+      "lr": 0.0008715724127386972,
+      "seconds": 2.009665296000094
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.542592230240504,
+      "val_loss": 0.7856644892692566,
+      "metrics": {
+        "angle_error_median": 61.71668243408203,
+        "angle_error_mean": 71.22183227539062,
+        "within_30deg": 0.25609375,
+        "distance_mae": 2.631087064743042
+      },
+      "lr": 0.0008345653031794292,
+      "seconds": 1.863801575999787
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.521539212067922,
+      "val_loss": 0.7881845426559448,
+      "metrics": {
+        "angle_error_median": 62.89064025878906,
+        "angle_error_mean": 71.32279968261719,
+        "within_30deg": 0.256875,
+        "distance_mae": 2.548036575317383
+      },
+      "lr": 0.0007938926261462366,
+      "seconds": 1.8306281880004462
+    }
+  ],
+  "model": "bee",
+  "seed": 1,
+  "parameters": 160259,
+  "fusion": "vista_unica",
+  "head": "plana"
+}

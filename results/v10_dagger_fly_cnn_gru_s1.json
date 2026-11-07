@@ -1,0 +1,235 @@
+{
+  "model": "fly_cnn_gru",
+  "seed": 1,
+  "config": {
+    "model": "fly_cnn_gru",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "iterations": 3,
+    "episodes_per_iteration": 120,
+    "first_new_seed": 400,
+    "betas": [
+      0.5,
+      0.25,
+      0.0
+    ],
+    "epochs_per_iteration": 5,
+    "eval_families": [
+      "nominal",
+      "unknown_obstacles",
+      "dynamic",
+      "wind"
+    ],
+    "eval_episodes_per_family": 10
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "beta": 1.0,
+      "samples": 76077,
+      "val_f1_macro": 0.5904995195841065,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.725,
+          "collision": 0.25,
+          "coverage": 0.86875,
+          "home_error_median": 0.5720696910835936,
+          "steps_mean": 152.225
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.8400000000000001,
+            "home_error_median": 0.44472180498713887,
+            "steps_mean": 125.4
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.1,
+            "coverage": 0.9416666666666667,
+            "home_error_median": 0.44650545974613853,
+            "steps_mean": 204.4
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.5,
+            "collision": 0.5,
+            "coverage": 0.7133333333333333,
+            "home_error_median": 3.6464040766000774,
+            "steps_mean": 103.9
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.9800000000000001,
+            "home_error_median": 0.5849775079494239,
+            "steps_mean": 175.2
+          }
+        }
+      }
+    },
+    {
+      "iteration": 1,
+      "beta": 0.5,
+      "samples": 95482,
+      "new_samples": 19405,
+      "val_f1_macro": 0.5743737137045104,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.8,
+          "collision": 0.2,
+          "coverage": 0.9199999999999999,
+          "home_error_median": 0.4285788121742986,
+          "steps_mean": 150.75
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.9,
+            "home_error_median": 0.351384322810544,
+            "steps_mean": 138.1
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 0.9666666666666666,
+            "home_error_median": 0.3406221421284753,
+            "steps_mean": 159.5
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.6,
+            "collision": 0.4,
+            "coverage": 0.8133333333333332,
+            "home_error_median": 0.858635783319831,
+            "steps_mean": 121.9
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 1.0,
+            "home_error_median": 0.40295031682091287,
+            "steps_mean": 183.5
+          }
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "beta": 0.25,
+      "samples": 114893,
+      "new_samples": 19411,
+      "val_f1_macro": 0.580354170616787,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.725,
+          "collision": 0.275,
+          "coverage": 0.8941666666666667,
+          "home_error_median": 0.5153428913119333,
+          "steps_mean": 148.7
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.9,
+            "home_error_median": 0.4185850422639595,
+            "steps_mean": 161.4
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.9416666666666667,
+            "home_error_median": 0.34031527283595375,
+            "steps_mean": 152.0
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.4,
+            "collision": 0.6,
+            "coverage": 0.735,
+            "home_error_median": 10.100134695222614,
+            "steps_mean": 96.9
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 1.0,
+            "home_error_median": 0.647574880659139,
+            "steps_mean": 184.5
+          }
+        }
+      }
+    },
+    {
+      "iteration": 3,
+      "beta": 0.0,
+      "samples": 133205,
+      "new_samples": 18312,
+      "val_f1_macro": 0.5620177175434836,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.75,
+          "collision": 0.25,
+          "coverage": 0.8983333333333332,
+          "home_error_median": 0.5276524724216247,
+          "steps_mean": 148.2
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.9,
+            "home_error_median": 0.4593292663893685,
+            "steps_mean": 145.8
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.7,
+            "collision": 0.3,
+            "coverage": 0.9333333333333332,
+            "home_error_median": 0.3997518568431834,
+            "steps_mean": 151.9
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.6,
+            "collision": 0.4,
+            "coverage": 0.86,
+            "home_error_median": 0.7287503783029821,
+            "steps_mean": 125.7
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 0.9,
+            "home_error_median": 0.6168482765384269,
+            "steps_mean": 169.4
+          }
+        }
+      }
+    }
+  ],
+  "total_seconds": 628.7545591860003,
+  "device": "cuda"
+}

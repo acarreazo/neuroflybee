@@ -1,0 +1,70 @@
+{
+  "hardware": {
+    "cpu": "x86_64",
+    "sistema": "Linux 6.6.159+",
+    "python": "3.13.16",
+    "gpu": "Tesla T4",
+    "torch": "2.11.0+cu130",
+    "cuda": "13.0"
+  },
+  "horas_totales": 1.663990494109722,
+  "horas_gpu": 1.5332275832197222,
+  "etapas": [
+    {
+      "stage": "pruebas",
+      "seconds": 123.63220639100007,
+      "uses_gpu": false,
+      "status": "ok",
+      "started": "2026-11-05T03:19:59"
+    },
+    {
+      "stage": "datos",
+      "seconds": 341.28933340699996,
+      "uses_gpu": false,
+      "status": "ok",
+      "started": "2026-11-05T03:25:40"
+    },
+    {
+      "stage": "validacion_sensor",
+      "seconds": 5.824939405999999,
+      "uses_gpu": false,
+      "status": "ok",
+      "started": "2026-11-05T03:25:46"
+    },
+    {
+      "stage": "mosca",
+      "seconds": 1221.040460559,
+      "uses_gpu": true,
+      "status": "ok",
+      "started": "2026-11-05T03:46:07"
+    },
+    {
+      "stage": "dagger",
+      "seconds": 1885.782651817,
+      "uses_gpu": true,
+      "status": "ok",
+      "started": "2026-11-05T04:17:33"
+    },
+    {
+      "stage": "abeja",
+      "seconds": 162.99241775499968,
+      "uses_gpu": true,
+      "status": "ok",
+      "started": "2026-11-05T04:20:16"
+    },
+    {
+      "stage": "ablacion_abeja",
+      "seconds": 450.7098187370002,
+      "uses_gpu": true,
+      "status": "ok",
+      "started": "2026-11-05T04:27:47"
+    },
+    {
+      "stage": "benchmark",
+      "seconds": 1799.0939507229996,
+      "uses_gpu": true,
+      "status": "error",
+      "started": "2026-11-05T04:57:46"
+    }
+  ]
+}

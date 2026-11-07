@@ -1,2 +1,6 @@
 variante,etiqueta,semillas,parametros,error_mediano_media,error_mediano_de,fraccion_menor_30_media,fraccion_menor_30_de,error_distancia_m
 alv,ALV clásico,0,0,55.40,0.00,0.300,0.000,
+completa,Siamesa (v11),3,172547,10.03,0.31,0.899,0.004,1.966
+vista_unica,Sólo vista actual,3,160259,59.33,1.10,0.266,0.006,2.570
+sin_diferencia,Siamesa sin resta,3,166403,10.36,0.44,0.890,0.014,2.017
+compacta,Siamesa + lectura vectorial,3,24725,11.17,0.28,0.880,0.007,1.886

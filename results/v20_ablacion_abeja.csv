@@ -1,2 +1,14 @@
 variante,etiqueta,semilla,parametros,vistas,error_angular_mediano,error_angular_medio,fraccion_menor_30,error_distancia_m
 alv,ALV clásico,,0,6400,55.40,66.73,0.300,
+completa,Siamesa (v11),0,172547,6400,9.96,14.23,0.899,1.920
+completa,Siamesa (v11),1,172547,6400,9.77,13.98,0.903,2.012
+completa,Siamesa (v11),2,172547,6400,10.37,14.59,0.895,1.965
+vista_unica,Sólo vista actual,0,160259,6400,58.22,68.80,0.268,2.624
+vista_unica,Sólo vista actual,1,160259,6400,59.35,69.22,0.270,2.501
+vista_unica,Sólo vista actual,2,160259,6400,60.42,70.05,0.259,2.584
+sin_diferencia,Siamesa sin resta,0,166403,6400,10.72,15.20,0.880,1.927
+sin_diferencia,Siamesa sin resta,1,166403,6400,9.88,14.04,0.906,2.009
+sin_diferencia,Siamesa sin resta,2,166403,6400,10.49,15.23,0.885,2.115
+compacta,Siamesa + lectura vectorial,0,24725,6400,10.89,15.21,0.885,1.887
+compacta,Siamesa + lectura vectorial,1,24725,6400,11.15,15.57,0.883,1.857
+compacta,Siamesa + lectura vectorial,2,24725,6400,11.46,16.10,0.871,1.913

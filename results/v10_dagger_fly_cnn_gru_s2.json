@@ -1,0 +1,235 @@
+{
+  "model": "fly_cnn_gru",
+  "seed": 2,
+  "config": {
+    "model": "fly_cnn_gru",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "iterations": 3,
+    "episodes_per_iteration": 120,
+    "first_new_seed": 400,
+    "betas": [
+      0.5,
+      0.25,
+      0.0
+    ],
+    "epochs_per_iteration": 5,
+    "eval_families": [
+      "nominal",
+      "unknown_obstacles",
+      "dynamic",
+      "wind"
+    ],
+    "eval_episodes_per_family": 10
+  },
+  "iterations": [
+    {
+      "iteration": 0,
+      "beta": 1.0,
+      "samples": 76077,
+      "val_f1_macro": 0.5824859447589096,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.725,
+          "collision": 0.275,
+          "coverage": 0.8816666666666666,
+          "home_error_median": 0.49949891209732944,
+          "steps_mean": 143.175
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 0.9666666666666666,
+            "home_error_median": 0.4437211587461446,
+            "steps_mean": 145.8
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.7,
+            "collision": 0.3,
+            "coverage": 0.9666666666666666,
+            "home_error_median": 0.4602036125676373,
+            "steps_mean": 154.9
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.4,
+            "collision": 0.6,
+            "coverage": 0.5933333333333333,
+            "home_error_median": 6.26700078960606,
+            "steps_mean": 90.0
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 1.0,
+            "home_error_median": 0.5724679076499137,
+            "steps_mean": 182.0
+          }
+        }
+      }
+    },
+    {
+      "iteration": 1,
+      "beta": 0.5,
+      "samples": 95762,
+      "new_samples": 19685,
+      "val_f1_macro": 0.5759936426331307,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.725,
+          "collision": 0.275,
+          "coverage": 0.9199999999999999,
+          "home_error_median": 0.5486168627973503,
+          "steps_mean": 147.75
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.9666666666666666,
+            "home_error_median": 0.5687149946072383,
+            "steps_mean": 142.7
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.7,
+            "collision": 0.3,
+            "coverage": 0.9666666666666666,
+            "home_error_median": 0.5173476622413034,
+            "steps_mean": 159.0
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.6,
+            "collision": 0.4,
+            "coverage": 0.8666666666666668,
+            "home_error_median": 0.5249394125245099,
+            "steps_mean": 126.8
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.8800000000000001,
+            "home_error_median": 0.5644921203540213,
+            "steps_mean": 162.5
+          }
+        }
+      }
+    },
+    {
+      "iteration": 2,
+      "beta": 0.25,
+      "samples": 114537,
+      "new_samples": 18775,
+      "val_f1_macro": 0.5584500880266291,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.725,
+          "collision": 0.25,
+          "coverage": 0.8766666666666666,
+          "home_error_median": 0.4876098781229252,
+          "steps_mean": 156.45
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 0.9,
+            "home_error_median": 0.3490970664204256,
+            "steps_mean": 141.8
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.7,
+            "collision": 0.2,
+            "coverage": 0.9666666666666666,
+            "home_error_median": 0.5126483763422855,
+            "steps_mean": 203.3
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.5,
+            "collision": 0.5,
+            "coverage": 0.6599999999999999,
+            "home_error_median": 3.4255467465148373,
+            "steps_mean": 102.8
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.8,
+            "collision": 0.2,
+            "coverage": 0.9800000000000001,
+            "home_error_median": 0.455336107585985,
+            "steps_mean": 177.9
+          }
+        }
+      }
+    },
+    {
+      "iteration": 3,
+      "beta": 0.0,
+      "samples": 133039,
+      "new_samples": 18502,
+      "val_f1_macro": 0.5619822870826406,
+      "closed_loop": {
+        "all": {
+          "episodes": 40,
+          "success": 0.725,
+          "collision": 0.25,
+          "coverage": 0.85125,
+          "home_error_median": 0.5344713854039613,
+          "steps_mean": 152.375
+        },
+        "by_family": {
+          "nominal": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 0.9,
+            "home_error_median": 0.34574983210642685,
+            "steps_mean": 145.9
+          },
+          "unknown_obstacles": {
+            "episodes": 10,
+            "success": 0.7,
+            "collision": 0.2,
+            "coverage": 0.95,
+            "home_error_median": 0.5050027740680456,
+            "steps_mean": 198.9
+          },
+          "dynamic": {
+            "episodes": 10,
+            "success": 0.4,
+            "collision": 0.6,
+            "coverage": 0.655,
+            "home_error_median": 9.487222212232432,
+            "steps_mean": 94.7
+          },
+          "wind": {
+            "episodes": 10,
+            "success": 0.9,
+            "collision": 0.1,
+            "coverage": 0.9,
+            "home_error_median": 0.5275763383574401,
+            "steps_mean": 170.0
+          }
+        }
+      }
+    }
+  ],
+  "total_seconds": 623.868392972,
+  "device": "cuda"
+}
